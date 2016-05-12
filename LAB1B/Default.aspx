@@ -29,7 +29,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home <span class="sr-only">(current)</span></a></li>
         <li><a href="#">About</a></li>
            <li><a href="#">Contact Us</a></li>
         
@@ -49,7 +49,7 @@
                         <div class="col-md-3">
                         <asp:Label ID="lblfirstname" runat="server" Text="First Name :" /></div>
                          <div class="col-md-offset-3">
-                        <asp:TextBox ID="txtfirstname" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtfirstname" runat="server" required="true" CssClass="form-control" CausesValidation="True"></asp:TextBox>
                              </div>
 
                     </div>
@@ -57,7 +57,7 @@
                           <div class="col-md-3">
                         <asp:Label ID="lblLastname" runat="server" Text="Last Name :" /></div>
                          <div class="col-md-offset-3">
-                        <asp:TextBox ID="txtLastName" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtLastName" runat="server" required="true" CssClass="form-control" CausesValidation="True"></asp:TextBox>
                              </div>
 
                     </div>
@@ -65,7 +65,8 @@
                           <div class="col-md-3">
                         <asp:Label ID="lblAge" runat="server" Text="Age :" /></div>
                         <div class="col-md-offset-3">
-                        <asp:TextBox ID="txtAge" runat="server" CssClass="form-control"></asp:TextBox></div>
+                        <asp:TextBox ID="txtAge" runat="server" CssClass="form-control" CausesValidation="True"></asp:TextBox>
+                            <asp:RangeValidator ID="AgeRangeValidator" runat="server" MaximumValue="120" MinimumValue="1" Type="Integer" CssClass="alert alert-danger" ControlToValidate="txtAge" ErrorMessage="Please enter valid age between 1 and 120."></asp:RangeValidator></div>
                         
 
                     </div>
