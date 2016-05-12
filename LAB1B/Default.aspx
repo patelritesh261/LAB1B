@@ -48,7 +48,7 @@
                     <div class="form-group">
                         <div class="col-md-3">
                         <asp:Label ID="lblfirstname" runat="server" Text="First Name :" /></div>
-                         <div class="col-md-offset-3">
+                         <div class="col-md-offset-3 ">
                         <asp:TextBox ID="txtfirstname" runat="server" required="true" CssClass="form-control" CausesValidation="True"></asp:TextBox>
                              </div>
 
