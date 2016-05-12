@@ -44,6 +44,7 @@
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
                 <form id="form1" class="form" runat="server">
+                    <h1>User Profile</h1>
                     <div class="form-group">
                         <div class="col-md-3">
                         <asp:Label ID="lblfirstname" runat="server" Text="First Name :" /></div>
